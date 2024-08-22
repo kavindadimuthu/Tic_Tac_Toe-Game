@@ -1,0 +1,80 @@
+body{
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resultbox{
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 35px;
+    display: none;
+}
+.resultbox::first-letter{
+    /* color: red; */
+    background: rgb(191, 240, 191);
+    border-radius: 50%;
+    padding: 10px 20px;
+}
+.board{
+    /* position: absolute; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+    height: fit-content;
+    gap: 0.5em;
+    /* border: 5px solid red; */
+}
+.board button{
+    background: #322657;
+    color: #322657;
+    font-size: 4em;
+    width: 130px;
+    height: 130px;
+}
+.board button:hover{
+    opacity: 0.9;
+}
+#playagainbutton{
+    display: none;
+    margin-top: 50px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1.3em;
+    /* background: linear-gradient(rgb(252, 8, 0),rgb(255, 145, 145)); */
+    background: red;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 600;
+    /* font-family: serif; */
+}
+
+@media screen and (max-width: 1280px) {
+    body{
+        
+    }
+    .board{
+        
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    body{
+        
+    }
+    .board{
+
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    body{
+
+    }
+    .board{
+        
+    }
+    
+}
